@@ -17,8 +17,6 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-
-
 Route::group(['namespace' => 'Api'], function () {
     $exceptCreateAndEdit = [
         'except' => ['create', 'edit']
