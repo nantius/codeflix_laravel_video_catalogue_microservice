@@ -16,7 +16,7 @@ class Category extends Model
     * @var string
     */
     protected $keyType = 'string';
-
+    protected $casts = ['is_active' => 'boolean'];
     public $incrementing = false;
     protected $fillable = ['name' , 'description', 'is_active'];
 }

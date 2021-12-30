@@ -16,7 +16,7 @@ class Genre extends Model
     * @var string
     */
     protected $keyType = 'string';
-
+    protected $casts = ['is_active' => 'boolean'];
     public $incrementing = false;
     protected $fillable = ['name' , 'is_active'];
 }
